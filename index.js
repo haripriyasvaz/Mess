@@ -1,10 +1,21 @@
 
 
 const URL = "https://messnitrklserver.herokuapp.com/api/hostel/";
+function showpb() {
+  var x = document.getElementById("loaderouter");
 
+  x.style.display = "block";
+
+}
+function hidepb() {
+  var x = document.getElementById("loaderouter");
+
+  x.style.display = "none";
+}
 
 
 function getMessData(hostel, meal) {
+  showpb();
   fetch(URL, {
     method: 'POST',
     headers: {
@@ -18,6 +29,7 @@ function getMessData(hostel, meal) {
   })
     .then(response => response.json())
     .then(data => {
+      hidepb();
       var veg = parseInt(data.data.veg);
       var nonveg = parseInt(data.data.nonveg);
       var total = veg + nonveg;
@@ -27,6 +39,7 @@ function getMessData(hostel, meal) {
     })
     // {"isTrue":1,"msg":"","data":{"absent":0,"veg":0,"nonveg":0}}
     .catch(error => {
+      hidepb();
       window.alert("Error in fetching error!!");
     });
 

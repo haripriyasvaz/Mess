@@ -1,4 +1,6 @@
-
+#loaderouter{
+align-items: center;
+}
 
 circle{
     fill: none;
@@ -6,7 +8,7 @@ circle{
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
-    animation: anim 20s linear forwards;
+    animation: anim 5s linear forwards;
     z-index: 100;
 }
 
