@@ -7,16 +7,20 @@
     height: 100%;
     z-index: 9999;
     background:black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
 
     /* background: url('//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phi_fenomeni.gif/50px-Phi_fenomeni.gif') 
                 50% 50% no-repeat rgb(249,249,249); */
 }
-#loaderouter p{
+/* #loaderouter p{
     color:white;
     text-align: center;
-    margin-top: 250px;
-}
+    
+    align-items: center
+} */
 
 circle{
     fill: none;
@@ -43,5 +47,6 @@ svg{
 .gif{
     width:100%;
     height:100%;
+
 }
 
