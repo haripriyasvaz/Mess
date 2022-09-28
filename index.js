@@ -1,4 +1,4 @@
-const URL = "http://13.234.156.148:6000/api/hostel/";
+const URL = "http://13.234.156.148:5001/api/hostel/";
 function showpb() {
   var x = document.getElementById("loaderouter");
   x.style.display = "block";
